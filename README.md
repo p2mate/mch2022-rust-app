@@ -16,7 +16,7 @@ cargo espflash save-image rust_esp.img
 ```
 webusb_push.py --run rust rust_esp.img
 ```
-+ println! output appears on the first serial port exposed by the MCGH022 badge
++ println! output appears on the first serial port exposed by the MCH022 badge
 + If your program panics, the badge will reboot to the main menu, use the serial
 port to see any panic related messages.
 + All crates which work on ESP32 should be available
