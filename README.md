@@ -6,7 +6,9 @@ Rust on the ESP32 of the MCH2022 badge
 + Install the mch2022 webusb tools from https://github.com/badgeteam/mch2022-tools
 + Create a new project as follows:
 ```
- cargo generate --git https://github.com/esp-rs/esp-idf-template cargo
+cargo generate --git https://github.com/esp-rs/esp-idf-template cargo
+cd $PROJECT_NAME
+rustup override set esp
 ```
 + You can generate an app image using:
 ```
