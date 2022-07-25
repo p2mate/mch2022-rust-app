@@ -12,7 +12,7 @@ rustup override set esp
 ```
 + You can generate an app image using:
 ```
-cargo espflash save-image rust_esp.img
+cargo espflash ESP32 save-image rust_esp.img
 ```
 + This image can then be uploaded to the badge as follows:
 ```
