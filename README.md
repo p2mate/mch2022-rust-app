@@ -5,17 +5,17 @@ Rust on the ESP32 of the MCH2022 badge
 + Install cargo-generate (cargo install cargo-generate)
 + Install the mch2022 webusb tools from https://github.com/badgeteam/mch2022-tools
 + Create a new project as follows:
-'''
+```
  cargo generate --git https://github.com/esp-rs/esp-idf-template cargo
-'''
+```
 + You can generate an app image using:
-'''
+```
 cargo espflash save-image rust_esp.img
-'''
+```
 + This image can then be uploaded to the badge as follows:
-'''
+```
 webusb_push.py --run rust rust_esp.img
-'''
+```
 + println! output appears on the first serial port exposed by the MCGH022 badge
 + If your program panics, the badge will reboot to the main menu, use the serial
 port to see any panic related messages.
