@@ -52,6 +52,8 @@ webusb_push.py --run rust rust_esp.img
 + If your program panics, the badge will reboot to the main menu, use the serial
 port to see any panic related messages.
 + All crates which work on ESP32 should be available
++ When using devcontainers, it supports [Wokwi](https://wokwi.com/) simulation:
+![MCH2022 Rust App](docs/wokwi-simulation.png)
 
 Limitations
 -----------
