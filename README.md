@@ -1,13 +1,28 @@
 Rust on the ESP32 of the MCH2022 badge
 --------------------------------------
 
-+ Install Rust toolchain from https://github.com/esp-rs/rust-build
-+ Install cargo-generate (cargo install cargo-generate)
-+ Install the mch2022 webusb tools from https://github.com/badgeteam/mch2022-tools
++ Install Rust toolchain from https://github.com/esp-rs/rust-build:
+  ```
+  git clone https://github.com/esp-rs/rust-build.git
+  cd rust-build
+  ./install-rust-toolchain.sh --extra-crates "ldproxy cargo-espflash wokwi-server web-flash" \
+    --export-file /home/<user>/export-esp.sh \
+    --esp-idf-version "release/v4.4" \
+    --minified-esp-idf "YES" \
+    --build-target "esp32" \
+  ```
++ Install cargo-generate:
+  ```
+  cargo install cargo-generate
+  ```
++ Install the mch2022 webusb tools from https://github.com/badgeteam/mch2022-tools:
+  ```
+  pip install pyusb
+  ```
 + Create a new project as follows:
 ```
 cargo generate --git https://github.com/esp-rs/esp-idf-template cargo
-cd $PROJECT_NAME
+cd <project-name>
 ```
 + You can generate an app image using:
 ```
@@ -44,15 +59,12 @@ the display would result in better performance.
 
 Dev Containers
 ------------
-This repository offers Dev Containers supports for:
+This repository offers ready-to-use devlopment environments via Dev Containers for:
 -  [Gitpod](https://gitpod.io/)
    - ["Open in Gitpod" button](https://www.gitpod.io/docs/getting-started#open-in-gitpod-button)
 -  [VS Code Dev Containers](https://code.visualstudio.com/docs/remote/containers#_quick-start-open-an-existing-folder-in-a-container)
 -  [GitHub Codespaces](https://docs.github.com/en/codespaces/developing-in-codespaces/creating-a-codespace)
 > **Note**
->
-> In order to use Gitpod the project needs to be published in a GitLab, GitHub,
-> or Bitbucket repository.
 >
 > In [order to use GitHub Codespaces](https://github.com/features/codespaces#faq)
 > the project needs to be published in a GitHub repository and the user needs
