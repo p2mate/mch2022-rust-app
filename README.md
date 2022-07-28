@@ -8,7 +8,6 @@ Rust on the ESP32 of the MCH2022 badge
 ```
 cargo generate --git https://github.com/esp-rs/esp-idf-template cargo
 cd $PROJECT_NAME
-rustup override set esp
 ```
 + You can generate an app image using:
 ```
@@ -26,7 +25,7 @@ port to see any panic related messages.
 Limitations
 -----------
 
-+ These instructions use the esp-idf as provided by Espressiv so you won't have
++ These instructions use the esp-idf as provided by Espressif so you won't have
 access to the components added by the badge team. It's probably possible to use
 their version, but I have not tried this.
 
