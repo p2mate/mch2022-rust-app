@@ -30,7 +30,7 @@ export ESP_ARCH=xtensa-esp32-espidf
 # TODO: Update with your Wokwi Project
 export WOKWI_PROJECT_ID="331029349485511251"
 if [ "${WOKWI_PROJECT_ID}" == "" ]; then
-    wokwi-server --chip esp32 target/${ESP_ARCH}/${BUILD_MODE}/mch
+    wokwi-server --chip esp32 target/${ESP_ARCH}/${BUILD_MODE}/mch2022-badge-modplayer
 else
     wokwi-server --chip esp32 --id ${WOKWI_PROJECT_ID} target/${ESP_ARCH}/${BUILD_MODE}/mch2022-badge-modplayer
 fi
