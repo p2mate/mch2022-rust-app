@@ -10,6 +10,7 @@ Rust on the ESP32 of the MCH2022 badge
     --esp-idf-version "release/v4.4" \
     --minified-esp-idf "YES" \
     --build-target "esp32" \
+  source /home/<user>/export-esp-rust.sh  
   ```
 + Install cargo-generate:
   ```
@@ -75,8 +76,7 @@ the display would result in better performance.
 Dev Containers
 ------------
 This repository offers ready-to-use devlopment environments via Dev Containers for:
--  [Gitpod](https://gitpod.io/)
-   - ["Open in Gitpod" button](https://www.gitpod.io/docs/getting-started#open-in-gitpod-button)
+-  [Gitpod](https://gitpod.io/)[![Open ESP32 in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/github.com/SergioGasquez/mch2022-rust-app)
 -  [VS Code Dev Containers](https://code.visualstudio.com/docs/remote/containers#_quick-start-open-an-existing-folder-in-a-container)
 -  [GitHub Codespaces](https://docs.github.com/en/codespaces/developing-in-codespaces/creating-a-codespace)
 > **Note**
