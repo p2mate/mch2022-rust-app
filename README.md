@@ -33,20 +33,6 @@ cargo espflash ESP32 save-image rust_esp.img
 ```
 webusb_push.py --run rust rust_esp.img
 ```
-+ If you would like to build and upload the code, you can use:
-    - Terminal approach:
-      - Using `flash.sh` script:
-
-        ```
-        scripts/flash.sh [debug | release]
-        ```
-        > If no argument is passed, `release` will be used as default
-
-    - UI approach:
-        - From the [Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette) (`Ctrl-Shift-P` or `Cmd-Shift-P`) run the `Tasks: Run Task` command and
-        select `Build & Flash`.
-        - From UI: Press `Build & Flash` on the left side of the Status Bar.
-    - Any alternative flashing method from host machine.
 
 + `println!` output appears on the first serial port exposed by the MCH022 badge
 + If your program panics, the badge will reboot to the main menu, use the serial
