@@ -178,10 +178,8 @@ where
 {
     use embedded_graphics::{
         image::Image,
-        mono_font::{ascii::FONT_10X20, MonoTextStyle},
         pixelcolor::*,
         primitives::*,
-        text::*,
     };
 
     display.clear(Rgb565::BLACK.into()).expect("Display error");
