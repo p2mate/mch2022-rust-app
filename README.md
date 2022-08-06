@@ -27,13 +27,13 @@ cd <project-name>
 ```
 + You can generate an app image using:
 ```
-cargo espflash ESP32 save-image rust_esp.img
+cargo espflash ESP32 save-image main.bin
 ```
 + This image can then be uploaded to the badge as follows:
 ```
-webusb_push.py --run rust rust_esp.img
+webusb_push.py --run rust main.bin
 ```
-
++ The image can also be uploaded to the hatchery as a native ESP32 application
 + `println!` output appears on the first serial port exposed by the MCH022 badge
 + If your program panics, the badge will reboot to the main menu, use the serial
 port to see any panic related messages.
